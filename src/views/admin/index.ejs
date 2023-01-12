@@ -1,27 +1,67 @@
-<%- include('../includes/head.ejs')%> 
-<%- include('../includes/header.ejs')%>
+<%- include('../includes/head.ejs')%> <%- include('../includes/header.ejs')%>
 
 <div
   class="login container-fluid w-100 d-flex flex-column justify-content-center align-items-center mb-2 p-5 bg-light"
 >
-
-    <div class="home-screen">
-      <header>
-        <h3>Dashboard</h3>
-        <div class="select">
-          <select name="" id="">
-            <option value="Aujourdhui">Aujourdhui</option>
-            <option value="Semaine passée">Semaine passée</option>
-            <option value="Mois Passée">Mois Passée</option>
-          </select>
-          <select name="" id="">
-            <option value="Aujourdhui">Avant-Midi</option>
-            <option value="Semaine passée">Après-Midi</option>
-            <option value="Mois Passée">Mois Passée</option>
-          </select>
+  <div class="home-screen">
+    <header>
+      <h3>Dashboard</h3>
+      <div class="select">
+        <select name="" id="">
+          <option value="Aujourdhui">Aujourdhui</option>
+          <option value="Semaine passée">Semaine passée</option>
+          <option value="Mois Passée">Mois Passée</option>
+        </select>
+        <select name="" id="">
+          <option value="Aujourdhui">Avant-Midi</option>
+          <option value="Semaine passée">Après-Midi</option>
+          <option value="Mois Passée">Mois Passée</option>
+        </select>
+      </div>
+    </header>
+    <main>
+      <div class="card">
+        <div class="head">
+          <h5>Presences</h5>
         </div>
-      </header>
-    </div>
-   
+        <div class="main">
+          <h2>50%</h2>
+        </div>
+      </div>
+      <div class="card">
+        <div class="head">
+          <h5>Abscences</h5>
+        </div>
+        <div class="main">
+          <div>
+            <h6>Justifié</h6>
+            <h2>50%</h2>
+          </div>
+          <div class="divider"></div>
+          <div>
+            <h6>Non justifié</h6>
+            <h2>50%</h2>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="head">
+          <h5>Retards</h5>
+        </div>
+        <div class="main">
+          <div>
+            <h6>Justifié</h6>
+            <h2>50%</h2>
+          </div>
+          <div class="divider"></div>
+          <div>
+            <h6>Non justifié</h6>
+            <h2>50%</h2>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
   <%- include('../includes/footer.ejs')%>
 </div>
