@@ -25,7 +25,6 @@ export async function getIndex(req, res, next) {
             where: { createdAt: date }, // i make here great than
             group: "presence",
         });
-        console.log(presencesToday)
         const allPresences = (
             await Presence.findAll({
                 attributes: [
@@ -37,7 +36,6 @@ export async function getIndex(req, res, next) {
                 order: ["presence"],
             })
         ).map((ele) => ele.dataValues);
-        console.log(allPresences)
         return res.render("admin/index", {
             presencesToday,
             date,
