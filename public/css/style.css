@@ -351,24 +351,27 @@ input {
 .home-screen main{
   margin: 1.5rem 0;
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-wrap: wrap;
-  gap: .5rem;
+  gap: 1rem;
 }
 
 .home-screen .card{
   border: solid rgba(255, 0, 0, 0.275) 1px;
+  padding: 2rem;
 }
 
 .card .head{
   width: 100%;
-  border-bottom:  solid rgba(255, 0, 0, 0.275) 1px;
+  border-bottom:  solid rgba(255, 0, 0, 0.15) 1px;
   height: 2.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 0 .5rem;
+}
+
+.card .main h6{
+  color : rgba(0, 0, 0, 0.411)
 }
 
 .card .main{
@@ -377,13 +380,13 @@ input {
   align-items: center;
   height: 8rem;
   padding: 0 1rem;
-  gap: .5rem;
+  gap: 1rem;
 }
 
 .card .main .divider{
   height: 100%;
   width: 1px;
-  background: rgba(255, 0, 0, 0.397);
+  background: rgba(255, 0, 0, 0.15);
 }
 
 .home-screen select{
